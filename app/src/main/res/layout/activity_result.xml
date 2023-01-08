@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Background"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/imageResult"
+        android:layout_width="wrap_content"
+        android:layout_height="300dp"
+        android:src="@drawable/frontend" />
+
+    <TextView
+        android:id="@+id/textResult1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:fontFamily="@font/dunggeunmo"
+        android:gravity="center"
+        android:text="디자이너 감성 물씬~ \n 완벽주의자 프론트엔트"
+        android:textColor="@color/text"
+        android:textSize="22dp"
+        android:padding="4dp"
+        android:background="@drawable/resultedge"/>
+
+
+    <TextView
+        android:id="@+id/textResult2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="13dp"
+        android:fontFamily="@font/dunggeunmo"
+        android:text="1px에 집착하고 자간에 집착하는 당신. 완벽한 레이아웃이 아니면 개발을 시작할 수 없어 ! 대칭 균형 딱딱 맞는 사이트를 완벽하게 구현해냈을 때의 희열이란 ! 프론트는 당신의 데스티니~ 누구보다 미적 감각이 뛰어난 당신 혹시 전생에 예술가는 아니셨는지 ? 혼자서도 잘하는 당신이지만, 가끔은 당신의 도움을 간절히 바라는 친구들은 없는지 주변을 둘러봐주세요."
+        android:textColor="@color/text"
+        android:textSize="17dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="20dp">
+
+        <Button
+            android:id="@+id/vedioBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#99ccff"
+            android:padding="10dp"
+            android:text="설명보기"
+            android:textSize="20dp"
+            android:layout_marginRight="10dp"/>
+
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#99ccff"
+            android:text="다시하기"
+            android:padding="10dp"
+            android:textSize="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"/>
+
+        <Button
+            android:id="@+id/shareBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#99ccff"
+            android:text="공유하기"
+            android:textSize="20dp"
+            android:padding="10dp"
+            android:layout_marginLeft="10dp"/>
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>

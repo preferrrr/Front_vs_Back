@@ -1,0 +1,843 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ViewFlipper
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/viewFlipper1"
+        android:background="@color/Background">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="300dp"
+                android:src="@drawable/door"
+                android:layout_margin="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="22dp"
+                android:textColor="@color/text"
+                android:layout_margin="10dp"
+                android:text="1. 배가 아파서 화장실에 간 당신, 눈앞에 보이는 문고리의 모습"
+                android:fontFamily="@font/dunggeunmo"/>
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/radioG1"
+                android:layout_gravity="left">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="신경 쓰인다."
+                    android:textSize="18dp"
+                    android:buttonTint="@color/text"
+                    android:textColor="@color/text"
+                    android:id="@+id/radioBtn1_1"
+                    android:fontFamily="@font/dunggeunmo"
+                    android:layout_marginLeft="10dp"
+                    android:paddingLeft="5dp"/>
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18dp"
+                    android:textColor="@color/text"
+                    android:buttonTint="@color/text"
+                    android:text="이게 왜? 잠기기만 하면 된다."
+                    android:id="@+id/radioBtn1_2"
+                    android:fontFamily="@font/dunggeunmo"
+                    android:layout_marginLeft="10dp"
+                    android:paddingLeft="5dp"/>
+
+            </RadioGroup>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="NEXT"
+                android:background="#99ccff"
+                android:textSize="18dp"
+                android:layout_marginTop="50dp"
+                android:id="@+id/btnNext1"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/groupactivity"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:textColor="@color/text"
+                android:textSize="22dp"
+                android:text="2. 조별 과제에서 당신의 역할은?"
+                android:fontFamily="@font/dunggeunmo"
+                android:paddingLeft="5dp"/>
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/radioG2">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="정리된 자료로 ppt 만들기 (진정해.. 발표는 안시킬게요..?)"
+                    android:textSize="18dp"
+                    android:textColor="@color/text"
+                    android:buttonTint="@color/text"
+
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:id="@+id/radioBtn2_1"
+                    android:fontFamily="@font/dunggeunmo"
+                    android:paddingLeft="5dp"/>
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="자료조사 및 정리"
+                    android:textSize="18dp"
+                    android:buttonTint="@color/text"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:textColor="@color/text"
+                    android:id="@+id/radioBtn2_2"
+                    android:fontFamily="@font/dunggeunmo"
+                    android:paddingLeft="5dp"/>
+
+            </RadioGroup>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="NEXT"
+                android:background="#99ccff"
+                android:textSize="18dp"
+                android:layout_marginTop="50dp"
+                android:id="@+id/btnNext2"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="300dp"
+                android:src="@drawable/calendar" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text"
+                android:textSize="22dp"
+                android:layout_margin="10dp"
+                android:text="3. 달력을 봤는데 뭔가 이상한 것을 발견했어요. 가장 먼저 눈에 들어오는 것은?"
+                android:fontFamily="@font/dunggeunmo" />
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/radioG3"
+                android:layout_gravity="left"
+                android:layout_marginLeft="10dp">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="다른 폰트"
+                    android:textSize="18dp"
+                    android:textColor="@color/text"
+                    android:buttonTint="@color/text"
+                    android:id="@+id/radioBtn3_1"
+                    android:fontFamily="@font/dunggeunmo"
+                    android:layout_marginLeft="10dp"
+                    android:paddingLeft="5dp"/>
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="중복된 날짜"
+                    android:textSize="18dp"
+                    android:textColor="@color/text"
+                    android:buttonTint="@color/text"
+                    android:id="@+id/radioBtn3_2"
+                    android:fontFamily="@font/dunggeunmo"
+                    android:layout_marginLeft="10dp"
+                    android:paddingLeft="5dp"/>
+
+            </RadioGroup>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="NEXT"
+                android:background="#99ccff"
+                android:textSize="18dp"
+                android:layout_marginTop="50dp"
+                android:id="@+id/btnNext3"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="300dp"
+                android:src="@drawable/text"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:textSize="22dp"
+                android:layout_margin="15dp"
+                android:textColor="@color/text"
+                android:text="4. 무슨 색인가요?"
+                android:fontFamily="@font/dunggeunmo" />
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/radioG4"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="left">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="노랑"
+                    android:textSize="18dp"
+                    android:textColor="@color/text"
+                    android:buttonTint="@color/text"
+                    android:id="@+id/radioBtn4_1"
+                    android:fontFamily="@font/dunggeunmo"
+                    android:layout_marginLeft="10dp"
+                    android:paddingLeft="5dp"/>
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="파랑"
+                    android:textSize="18dp"
+                    android:textColor="@color/text"
+                    android:buttonTint="@color/text"
+                    android:id="@+id/radioBtn4_2"
+                    android:fontFamily="@font/dunggeunmo"
+                    android:layout_marginLeft="10dp"
+                    android:paddingLeft="5dp"/>
+
+            </RadioGroup>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="NEXT"
+                android:background="#99ccff"
+                android:textSize="18dp"
+                android:layout_marginTop="50dp"
+                android:id="@+id/btnNext4"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="300dp"
+                android:src="@drawable/front_vs_back" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:textSize="22dp"
+                android:textColor="@color/text"
+                android:layout_margin="10dp"
+                android:text="5. 운명적인 이끌림이 느껴지는 것은? 없다면 눈을 감고 찍어보세요!"
+                android:fontFamily="@font/dunggeunmo" />
+
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/radioG5"
+                android:layout_gravity="left">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18dp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/text"
+                    android:buttonTint="@color/text"
+                    android:text="컬러풀한 화면을 보며 사용자가 보기 좋고 편리하게 정보 배치하기"
+                    android:id="@+id/radioBtn5_1"
+                    android:fontFamily="@font/dunggeunmo"
+                    android:layout_marginLeft="10dp"
+                    android:paddingLeft="5dp"/>
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18dp"
+                    android:textColor="@color/text"
+                    android:buttonTint="@color/text"
+                    android:text="흑백으로 이루어진 데이터베이스에서 원하는 정보만 쏙 뽑아내서 정리하기"
+                    android:id="@+id/radioBtn5_2"
+                    android:fontFamily="@font/dunggeunmo"
+                    android:layout_marginLeft="10dp"
+                    android:paddingLeft="5dp"/>
+
+            </RadioGroup>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="NEXT"
+                android:background="#99ccff"
+                android:textSize="18dp"
+                android:layout_marginTop="50dp"
+                android:id="@+id/btnNext5"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="300dp"
+                android:src="@drawable/band" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="22dp"
+                android:textColor="@color/text"
+                android:layout_margin="10dp"
+                android:text="6. 밴드에 들어가기로 했어요. (실력은 동일하다고 했을 때)"
+                android:fontFamily="@font/dunggeunmo"
+                android:paddingLeft="5dp"/>
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/radioG6"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="left">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="보컬 할래."
+                    android:textColor="@color/text"
+                    android:buttonTint="@color/text"
+                    android:textSize="18dp"
+                    android:id="@+id/radioBtn6_1"
+                    android:fontFamily="@font/dunggeunmo"
+                    android:layout_marginLeft="10dp"
+                    android:paddingLeft="5dp"/>
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/text"
+                    android:buttonTint="@color/text"
+                    android:textSize="18dp"
+                    android:text="베이스기타 할래."
+                    android:id="@+id/radioBtn6_2"
+                    android:fontFamily="@font/dunggeunmo"
+                    android:layout_marginLeft="10dp"
+                    android:paddingLeft="5dp"/>
+
+            </RadioGroup>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="NEXT"
+                android:background="#99ccff"
+                android:textSize="18dp"
+                android:layout_marginTop="50dp"
+                android:id="@+id/btnNext6"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="300dp"
+                android:src="@drawable/terminal" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:textColor="@color/text"
+                android:textSize="22dp"
+                android:text="7. 이 화면을 보고 드는 생각은?"
+                android:fontFamily="@font/dunggeunmo"
+                android:paddingLeft="5dp"/>
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/radioG7"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="left">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18dp"
+                    android:textColor="@color/text"
+                    android:buttonTint="@color/text"
+                    android:text="잘 모르겠다. 얼른 닫는다."
+                    android:id="@+id/radioBtn7_1"
+                    android:fontFamily="@font/dunggeunmo"
+                    android:layout_marginLeft="10dp"
+                    android:paddingLeft="5dp"/>
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="해커 빙의한다. 나 좀 멋있는듯?"
+                    android:textSize="18dp"
+                    android:textColor="@color/text"
+                    android:buttonTint="@color/text"
+                    android:id="@+id/radioBtn7_2"
+                    android:fontFamily="@font/dunggeunmo"
+                    android:layout_marginLeft="10dp"
+                    android:paddingLeft="5dp"/>
+
+            </RadioGroup>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#99ccff"
+                android:textSize="18dp"
+                android:layout_marginTop="50dp"
+                android:text="NEXT"
+                android:id="@+id/btnNext7"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="300dp"
+                android:src="@drawable/iron" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:text="8. 둘 중 한가지를 만들 수 있다면?"
+                android:textSize="22dp"
+                android:textColor="@color/text"
+                android:fontFamily="@font/dunggeunmo"
+                android:paddingLeft="5dp"/>
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/radioG8"
+                android:layout_gravity="left"
+                android:layout_marginLeft="10dp">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18dp"
+                    android:textColor="@color/text"
+                    android:buttonTint="@color/text"
+                    android:text="아이언맨 수트"
+                    android:id="@+id/radioBtn8_1"
+                    android:fontFamily="@font/dunggeunmo"
+                    android:layout_marginLeft="10dp"
+                    android:paddingLeft="5dp"/>
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="자비스 (인공지능)"
+                    android:textSize="18dp"
+                    android:textColor="@color/text"
+                    android:buttonTint="@color/text"
+                    android:id="@+id/radioBtn8_2"
+                    android:fontFamily="@font/dunggeunmo"
+                    android:layout_marginLeft="10dp"
+                    android:paddingLeft="5dp"/>
+
+            </RadioGroup>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="NEXT"
+                android:textSize="18dp"
+                android:background="#99ccff"
+                android:layout_marginTop="30dp"
+                android:id="@+id/btnNext8"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="300dp"
+                android:src="@drawable/cutie" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:text="9. 1 더하기 1은?"
+                android:textColor="@color/text"
+                android:textSize="22dp"
+                android:layout_marginTop="18dp"
+                android:fontFamily="@font/dunggeunmo"
+                android:paddingLeft="5dp"/>
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/radioG9"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="left">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="귀요미"
+                    android:textSize="18dp"
+                    android:textColor="@color/text"
+                    android:buttonTint="@color/text"
+                    android:id="@+id/radioBtn9_1"
+                    android:fontFamily="@font/dunggeunmo"
+                    android:layout_marginLeft="10dp"
+                    android:paddingLeft="5dp"/>
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2"
+                    android:textSize="18dp"
+                    android:textColor="@color/text"
+                    android:buttonTint="@color/text"
+                    android:id="@+id/radioBtn9_2"
+                    android:fontFamily="@font/dunggeunmo"
+                    android:layout_marginLeft="10dp"
+                    android:paddingLeft="5dp"/>
+
+            </RadioGroup>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="NEXT"
+                android:background="#99ccff"
+                android:textSize="18dp"
+                android:layout_marginTop="50dp"
+                android:id="@+id/btnNext9"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="300dp"
+                android:src="@drawable/sns" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:textSize="22dp"
+                android:textColor="@color/text"
+                android:text="10. SNS에 글, 사진을 올리면,"
+                android:fontFamily="@font/dunggeunmo"
+                android:paddingLeft="5dp"/>
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/radioG10"
+                android:layout_gravity="left"
+                android:layout_marginLeft="10dp">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="알람을 수시로 확인한다."
+                    android:textSize="18dp"
+                    android:textColor="@color/text"
+                    android:buttonTint="@color/text"
+                    android:id="@+id/radioBtn10_1"
+                    android:fontFamily="@font/dunggeunmo"
+                    android:layout_marginLeft="10dp"
+                    android:paddingLeft="5dp"/>
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="올리고 끝!"
+                    android:textColor="@color/text"
+                    android:buttonTint="@color/text"
+                    android:textSize="18dp"
+                    android:id="@+id/radioBtn10_2"
+                    android:fontFamily="@font/dunggeunmo"
+                    android:layout_marginLeft="10dp"
+                    android:paddingLeft="5dp"/>
+
+            </RadioGroup>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="NEXT"
+                android:background="#99ccff"
+                android:textSize="18dp"
+                android:layout_marginTop="50dp"
+                android:id="@+id/btnNext10"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="300dp"
+                android:src="@drawable/sympathy" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:text="11. 고민하는 친구가 있을 때 당신은,"
+                android:textSize="22dp"
+                android:textColor="@color/text"
+                android:fontFamily="@font/dunggeunmo"
+                android:paddingLeft="5dp"/>
+
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/radioG11"
+                android:layout_gravity="left"
+                android:layout_marginLeft="10dp">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="공감해준다"
+                    android:id="@+id/radioBtn11_1"
+                    android:textSize="18dp"
+                    android:buttonTint="@color/text"
+                    android:textColor="@color/text"
+                    android:fontFamily="@font/dunggeunmo"
+                    android:layout_marginLeft="10dp"
+                    android:paddingLeft="5dp"/>
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="해답을 찾아준다."
+                    android:id="@+id/radioBtn11_2"
+                    android:textSize="18dp"
+                    android:buttonTint="@color/text"
+                    android:textColor="@color/text"
+                    android:fontFamily="@font/dunggeunmo"
+                    android:layout_marginLeft="10dp"
+                    android:paddingLeft="5dp"/>
+
+            </RadioGroup>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="NEXT"
+                android:id="@+id/btnNext11"
+                android:textSize="18dp"
+                android:background="#99ccff"
+                android:layout_marginTop="30dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="300dp"
+                android:src="@drawable/art" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="22dp"
+                android:textColor="@color/text"
+                android:layout_margin="10dp"
+                android:text="12. 미적 감각이 있다는 이야기를 종종 듣는다."
+                android:fontFamily="@font/dunggeunmo"
+                android:paddingLeft="5dp"/>
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/radioG12"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="left">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="YES"
+                    android:textSize="18dp"
+                    android:textColor="@color/text"
+                    android:buttonTint="@color/text"
+                    android:id="@+id/radioBtn12_1"
+                    android:fontFamily="@font/dunggeunmo"
+                    android:layout_marginLeft="10dp"
+                    android:paddingLeft="5dp"/>
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="NO"
+                    android:textSize="18dp"
+                    android:textColor="@color/text"
+                    android:buttonTint="@color/text"
+                    android:id="@+id/radioBtn12_2"
+                    android:fontFamily="@font/dunggeunmo"
+                    android:layout_marginLeft="10dp"
+                    android:paddingLeft="5dp"/>
+
+            </RadioGroup>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="NEXT"
+                android:background="#99ccff"
+                android:textSize="18dp"
+                android:layout_marginTop="50dp"
+                android:id="@+id/btnNext12"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="300dp"
+                android:src="@drawable/star" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:textSize="22dp"
+                android:textColor="@color/text"
+                android:text="13. 사람들이 주목할 때"
+                android:fontFamily="@font/dunggeunmo"
+                android:paddingLeft="5dp"/>
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/radioG13"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="left">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="솔직히 즐긴다. 짜릿해"
+                    android:textSize="18dp"
+                    android:textColor="@color/text"
+                    android:buttonTint="@color/text"
+                    android:id="@+id/radioBtn13_1"
+                    android:fontFamily="@font/dunggeunmo"
+                    android:layout_marginLeft="10dp"
+                    android:paddingLeft="5dp"/>
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="으으 부담스러워~~"
+                    android:textSize="18dp"
+                    android:textColor="@color/text"
+                    android:buttonTint="@color/text"
+                    android:id="@+id/radioBtn13_2"
+                    android:fontFamily="@font/dunggeunmo"
+                    android:layout_marginLeft="10dp"
+                    android:paddingLeft="5dp"/>
+
+            </RadioGroup>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="NEXT"
+                android:background="#99ccff"
+                android:textSize="18dp"
+                android:layout_marginTop="50dp"
+                android:id="@+id/btnNext13"/>
+
+        </LinearLayout>
+
+    </ViewFlipper>
+
+</LinearLayout>

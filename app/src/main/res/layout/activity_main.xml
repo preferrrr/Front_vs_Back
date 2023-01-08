@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@color/Background"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="330dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/titleedge"
+        android:fontFamily="@font/dunggeunmo"
+        android:gravity="center"
+        android:text="Front vs Back"
+        android:textColor="@color/text"
+        android:textSize="40dp" />
+
+    <android.widget.Button
+        android:id="@+id/startBtn"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/startbtnedge"
+        android:fontFamily="@font/dunggeunmo"
+        android:padding="10dp"
+        android:text="START"
+        android:textColor="@color/text"
+        android:textSize="22dp" />
+
+    <android.widget.Button
+        android:id="@+id/resultBtn"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/resultbtnedge"
+        android:fontFamily="@font/dunggeunmo"
+        android:padding="10dp"
+        android:text="RESULT"
+        android:textColor="@color/text"
+        android:textSize="22dp" />
+
+    <android.widget.Button
+        android:id="@+id/makerBtn"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/makerbtnedge"
+        android:fontFamily="@font/dunggeunmo"
+        android:padding="10dp"
+        android:text="MAKER"
+        android:textColor="@color/text"
+        android:textSize="22dp" />
+
+
+</LinearLayout>

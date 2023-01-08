@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="300dp"
+    android:layout_height="240dp"
+    android:background="@color/Background"
+    android:gravity="center"
+    android:id="@+id/layoutDialog"
+    android:padding="20dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="제작자"
+        android:textSize="40dp"
+        android:textColor="@color/text"
+        android:background="@drawable/titleedge"
+        android:fontFamily="@font/dunggeunmo"
+        android:id="@+id/textTitle"
+        android:layout_marginBottom="5dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="이선호 201810897"
+        android:textColor="@color/text"
+        android:background="@drawable/maker"
+        android:fontFamily="@font/dunggeunmo"
+        android:paddingTop="15dp"
+        android:paddingBottom="5dp"
+        android:textSize="13dp"
+        android:id="@+id/seonho"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="윤한진 201812143"
+        android:textColor="@color/text"
+        android:background="@drawable/maker"
+        android:fontFamily="@font/dunggeunmo"
+        android:paddingTop="15dp"
+        android:paddingBottom="10dp"
+        android:textSize="13dp"
+        android:id="@+id/hanjin"
+        android:layout_marginBottom="3dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/Background"
+        android:textColor="@color/text"
+        android:text="확인"
+        android:layout_marginTop="15dp"
+        android:id="@+id/btnOk"/>
+
+
+</LinearLayout>
